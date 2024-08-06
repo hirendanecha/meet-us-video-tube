@@ -16,7 +16,7 @@ const api_url = environment.apiUrl;
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  const distFolder = join(process.cwd(), 'tube-dist/meetus-tube/browser');
+  const distFolder = join(process.cwd(), 'tube-dist/video-meetus-tube/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html'))
     ? 'index.original.html'
     : 'index';
@@ -26,7 +26,7 @@ export function app(): express.Express {
   const template = fs
     .readFileSync(
       path.join(
-        join(process.cwd(), 'tube-dist/meetus-tube/browser'),
+        join(process.cwd(), 'tube-dist/video-meetus-tube/browser'),
         'index.html'
       )
     )
@@ -83,9 +83,9 @@ export function app(): express.Express {
           title: 'MeetUs.Tube',
           description:
             'The Umbrella platform for All freedom based projects worldwide',
-          image: 'https://tube.freedom.buzz/assets/banner/freedom-buzz-high-res.jpeg',
-          site: 'https://tube.freedom.buzz/',
-          url: 'https://tube.freedom.buzz' + params,
+          image: 'https://video.meetus.tube/assets/banner/freedom-buzz-high-res.jpeg',
+          site: 'https://video.meetus.tube/',
+          url: 'https://video.meetus.tube' + params,
           keywords: 'MeetUs.Tube',
         };
         if (params.indexOf('channel/') > -1) {
@@ -127,7 +127,7 @@ export function app(): express.Express {
           const talent = {
             name: post?.title || post?.albumname || 'MeetUs.Tube Post',
             description: pdhtml?.textContent || 'Post content',
-            image: post?.thumbfilename || post?.metaimage || post?.imageUrl || 'https://tube.freedom.buzz/assets/MeetUsTube-logo.png',
+            image: post?.thumbfilename || post?.metaimage || post?.imageUrl || 'https://video.meetus.tube/assets/MeetUsTube-logo.png',
           };
           seo.title = talent.name;
           seo.description = strip_html_tags(talent.description);

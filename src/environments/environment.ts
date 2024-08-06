@@ -1,6 +1,6 @@
-const loginUrl = 'https://freedom.buzz/login';
-const logoutUrl = 'https://freedom.buzz/logout';
-const frontendUrl = 'https://tube.freedom.buzz/';
+const loginUrl = 'https://meetus.tube/login';
+const logoutUrl = 'https://meetus.tube/logout';
+const frontendUrl = 'https://video.meetus.tube/';
 const backendUrl = 'https://freedom-api.opash.in/';
 
 // const frontendUrl = 'http://localhost:4200/';
@@ -15,7 +15,7 @@ export const environment = {
   backendUrl: backendUrl,
   loginUrl: loginUrl,
   apiUrl: `${backendUrl}api/v1/`,
-  domain: '.freedom.buzz',
+  domain: '.meetus.tube',
   wasabiUrl: wasabiUrl,
   socketUrl: `${backendUrl}`,
   conferenceUrl: 'https://meet.facetime.tube/',

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "meetus-tube": {
+    "video-meetus-tube": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "tube-dist/meetus-tube/browser",
+            "outputPath": "tube-dist/video-meetus-tube/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -78,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "meetus-tube:build:production"
+              "browserTarget": "video-meetus-tube:build:production"
             },
             "development": {
-              "browserTarget": "meetus-tube:build:development"
+              "browserTarget": "video-meetus-tube:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "meetus-tube:build"
+            "browserTarget": "video-meetus-tube:build"
           }
         },
         "test": {
@@ -114,7 +114,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "tube-dist/meetus-tube/server",
+            "outputPath": "tube-dist/video-meetus-tube/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -149,8 +149,8 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "meetus-tube:build:development",
-              "serverTarget": "meetus-tube:server:development"
+              "browserTarget": "video-meetus-tube:build:development",
+              "serverTarget": "video-meetus-tube:server:development"
             }
           },
           "defaultConfiguration": "development"
@@ -159,12 +159,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "meetus-tube:build:development",
-              "serverTarget": "meetus-tube:server:development"
+              "browserTarget": "video-meetus-tube:build:development",
+              "serverTarget": "video-meetus-tube:server:development"
             },
             "production": {
-              "browserTarget": "meetus-tube:build:production",
-              "serverTarget": "meetus-tube:server:production"
+              "browserTarget": "video-meetus-tube:build:production",
+              "serverTarget": "video-meetus-tube:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -178,12 +178,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "meetus-tube:build:production",
-              "serverTarget": "meetus-tube:server:production"
+              "browserTarget": "video-meetus-tube:build:production",
+              "serverTarget": "video-meetus-tube:server:production"
             },
             "development": {
-              "browserTarget": "meetus-tube:build:development",
-              "serverTarget": "meetus-tube:server:development"
+              "browserTarget": "video-meetus-tube:build:development",
+              "serverTarget": "video-meetus-tube:server:development"
             }
           },
           "defaultConfiguration": "production"

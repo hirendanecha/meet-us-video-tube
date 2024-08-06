@@ -122,7 +122,7 @@ export class LfDashboardComponent implements OnInit {
   }
 
   openProfile(Id): void {
-    const url = `https://freedom.buzz/settings/view-profile/${Id}`;
+    const url = `https://meetus.tube/settings/view-profile/${Id}`;
     window.open(url, '_blank');
   }
 

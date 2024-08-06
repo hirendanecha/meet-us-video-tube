@@ -1,5 +1,5 @@
 {
-  "name": "meetus-tube",
+  "name": "video-meetus-tube",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,10 +8,10 @@
     "build:dev": "ng build --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run meetus-tube:dev-serve-ssr",
-    "serve:ssr": "node tube-dist/meetus-tube/server/main.js",
-    "build:ssr": "ng build && ng run meetus-tube:server",
-    "prerender": "ng run meetus-tube:prerender"
+    "dev:ssr": "ng run video-meetus-tube:dev-serve-ssr",
+    "serve:ssr": "node tube-dist/video-meetus-tube/server/main.js",
+    "build:ssr": "ng build && ng run video-meetus-tube:server",
+    "prerender": "ng run video-meetus-tube:prerender"
   },
   "private": true,
   "dependencies": {
