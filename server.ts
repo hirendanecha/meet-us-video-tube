@@ -82,8 +82,8 @@ export function app(): express.Express {
         var seo: any = {
           title: 'MeetUs.Tube',
           description:
-            'The Umbrella platform for All freedom based projects worldwide',
-          image: 'https://video.meetus.tube/assets/banner/freedom-buzz-high-res.jpeg',
+            'Create Local Meet Ups or Meet in Person Worldwide via Video Conference',
+          image: 'https://video.meetus.tube/assets/banner/banner.jpg',
           site: 'https://video.meetus.tube/',
           url: 'https://video.meetus.tube' + params,
           keywords: 'MeetUs.Tube',
